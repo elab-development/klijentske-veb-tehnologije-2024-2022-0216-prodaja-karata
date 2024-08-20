@@ -1,0 +1,69 @@
+.homePage {
+    background-image: url('../../assets/Ostalo/Pozadina pocetna.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; /* Koristimo min-height umjesto fiksne visine */
+    width: 100%; /* Koristimo 100% umjesto fiksne širine */
+    max-width: 1439px; /* Maksimalna širina za veće ekrane */
+    margin: 0 auto; /* Centriranje na većim ekranima */
+  }
+  
+  .tekstNaStrani {
+    position: relative;
+    padding: 100px 60px 0 60px; /* Koristimo padding umjesto margina */
+    max-width: 1200px; /* Maksimalna širina sadržaja */
+    margin: 0 auto; /* Centriranje sadržaja */
+  }
+  
+  .naslovGlavni {
+    font-size: 48px;
+  }
+  
+  .tekstGlavni {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  /* Responsivnost za tablete */
+  @media screen and (max-width: 1024px) {
+    .naslovGlavni {
+      font-size: 36px;
+    }
+  
+    .tekstGlavni {
+      font-size: 20px;
+    }
+  
+    .tekstNaStrani {
+      padding: 80px 40px 0 40px;
+    }
+  }
+  
+  /* Responsivnost za mobilne uređaje */
+  @media screen and (max-width: 768px) {
+    .naslovGlavni {
+      font-size: 28px;
+    }
+  
+    .tekstGlavni {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+  
+    .tekstNaStrani {
+      padding: 60px 20px 0 20px;
+    }
+  }
+  
+  /* Za vrlo male ekrane */
+  @media screen and (max-width: 480px) {
+    .naslovGlavni {
+      font-size: 24px;
+    }
+  
+    .tekstGlavni {
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  }

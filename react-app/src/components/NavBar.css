@@ -1,0 +1,114 @@
+.navbar {
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  
+  .Logo {
+    width: 130px;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .navbar ul li a:link,
+  .navbar ul li a:visited,
+  .navbar ul li a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    color: #654;
+  }
+  
+  .Korpica {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .Login {
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    white-space: nowrap;
+  }
+  
+  /* responsivnost */
+  @media screen and (max-width: 1024px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .Logo {
+      margin-left: 0;
+      order: 1;
+    }
+  
+    ul {
+      order: 3;
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .Login {
+      order: 2;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    ul li {
+      margin: 5px 10px;
+      font-size: 14px;
+    }
+  
+    .Login {
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Logo {
+      margin-bottom: 10px;
+    }
+  
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .Login {
+      margin-top: 10px;
+    }
+  }
