@@ -1,3 +1,4 @@
+import Futer from "../components/Futer";
 import NavBar from "../components/NavBar";
 //import { BrowserRouter,Routes, Route } from 'react-router-dom'
 /*import homeSlika from '../assets/Ostalo/Pozadina pocetna.png';*/
@@ -19,6 +20,7 @@ function Home() {
         </p>
 
         <div>
+          <Futer />
 
         </div>
         

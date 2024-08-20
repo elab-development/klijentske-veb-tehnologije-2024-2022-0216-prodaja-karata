@@ -1,0 +1,108 @@
+
+.kontenjer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: 0A075F;
+  }
+  
+
+  .prviDeo, .drugiDeo, .treciDeo {
+    flex: 1;
+    padding: 10px;
+  }
+  
+
+  .prviDeo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .prviDeo .tekstLevo {
+    text-align: left;
+  }
+  
+  .prviDeo .img1 {
+    margin-right: 10px;
+  }
+  
+ 
+  .drugiDeo ul {
+    list-style-type: none;
+    padding: 0;
+   
+  }
+  
+  .drugiDeo li {
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+
+  .treciDeo {
+    text-align: left;
+  }
+
+  .img1{
+    width: 25px;
+    height: 25px;
+}
+
+li {
+    display: inline-block;
+ }
+
+ .forma {
+  display: flex;
+  align-items: stretch;
+  max-width: 400px; /* Adjust this value as needed */
+}
+
+.forma form {
+  display: flex;
+  width: 100%;
+}
+
+.forma input:not([type="submit"]) {
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-right: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.forma input[type="submit"] {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.forma input[type="submit"]:hover {
+  background-color: #ff69b4;
+}
+
+.forma input:not([type="submit"]):focus {
+  outline: none;
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+  
+ 
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .prviDeo, .drugiDeo, .treciDeo {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
