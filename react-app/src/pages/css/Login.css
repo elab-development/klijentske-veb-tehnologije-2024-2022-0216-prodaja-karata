@@ -1,0 +1,94 @@
+.loginContainer {
+    background-color: rgba(238, 225, 255, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5%;
+    box-sizing: border-box;
+  }
+  
+  .formWrapper {
+    display: flex;
+    width: 100%;
+    max-width: 827px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .title {
+    color: rgba(100, 53, 209, 1);
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+  }
+  
+  .form {
+    border-radius: 20px;
+    background-color: rgba(10, 7, 95, 1);
+    display: flex;
+    margin-top: 28px;
+    flex-direction: column;
+    align-items: start;
+    font-size: clamp(1rem, 3vw, 2.25rem);
+    color: rgba(255, 255, 255, 1);
+    padding: 5%;
+    border: 2px solid rgba(85, 34, 204, 1);
+    box-sizing: border-box;
+  }
+  
+  .inputField {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    margin-top: 31px;
+    width: 100%;
+    max-width: 535px;
+    height: 54px;
+    border: 1px solid rgba(100, 53, 209, 1);
+  }
+  
+  .passwordLabel {
+    margin-top: 48px;
+  }
+  
+  .submitButton {
+    border-radius: 20px;
+    background-color: rgba(100, 53, 209, 1);
+    margin-top: 37px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding: 0.5em 2em;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .loginContainer {
+      padding: 10% 5%;
+    }
+  
+    .form {
+      padding: 10% 5%;
+    }
+  
+    .passwordLabel {
+      margin-top: 30px;
+    }
+  
+    .submitButton {
+      width: 100%;
+    }
+  }
