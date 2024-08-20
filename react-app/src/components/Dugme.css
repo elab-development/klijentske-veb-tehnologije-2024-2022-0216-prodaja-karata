@@ -1,0 +1,9 @@
+.dugme {
+    border-radius: 20px;
+    display: flex;
+    max-width: 229px;
+    flex-direction: column;
+    color: #fff;
+    font: 500 24px DM Sans, sans-serif;
+  }
+  
