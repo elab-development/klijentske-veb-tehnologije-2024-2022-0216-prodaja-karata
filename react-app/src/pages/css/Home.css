@@ -2,17 +2,17 @@
     background-image: url('../../assets/Ostalo/Pozadina pocetna.png');
     background-position: center;
     background-size: cover;
-    min-height: 100vh; /* Koristimo min-height umjesto fiksne visine */
-    width: 100%; /* Koristimo 100% umjesto fiksne širine */
-    max-width: 1439px; /* Maksimalna širina za veće ekrane */
-    margin: 0 auto; /* Centriranje na većim ekranima */
+    min-height: 100vh; 
+    width: 100%; 
+    max-width: 1439px; 
+    margin: 0 auto; 
   }
   
   .tekstNaStrani {
     position: relative;
-    padding: 100px 60px 0 60px; /* Koristimo padding umjesto margina */
-    max-width: 1200px; /* Maksimalna širina sadržaja */
-    margin: 0 auto; /* Centriranje sadržaja */
+    padding: 100px 60px 0 60px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
   }
   
   .naslovGlavni {
@@ -24,7 +24,93 @@
     font-weight: bold;
     font-size: 25px;
   }
+
+
+
+
+
+
+
+  .partneri {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .partneriNaslov{
+    text-align: center;
+    color: black;
+  }
+
+
+
+
+
+
+  .registracija {
+    background-color: #b89dcd;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .kontenjerTekstIDugme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .slika {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slika img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .kontenjerTekstIDugme {
+    flex-basis: 50%;
+    text-align: left;
+  }
+  
+  .registracijaNaslov {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .registracijaOpis {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 24px;
+  }
+  
+  .registracijaDugme {
+    background-color: #E83E8C;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registracijaDugme:hover {
+    background-color: #C62E78;
+  }
+  
+  
+
+
+
   /* Responsivnost za tablete */
   @media screen and (max-width: 1024px) {
     .naslovGlavni {

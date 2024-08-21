@@ -36,8 +36,11 @@ function Futer() {
         <div className = 'treciDeo'>
             <p>Ostani Informisan</p>
             <p>Pridruzi se mailing listi i budi informisan o svim dogadjajima u buducnosti</p>
-            <div className = 'forma'>
-               
+            
+            <div className="forma">
+            <input type="email" placeholder="Unesi e-mail ovde..." />
+            <button type="submit" className="dugmence">Prijavi se</button>
+          
             </div>
 
         </div>
