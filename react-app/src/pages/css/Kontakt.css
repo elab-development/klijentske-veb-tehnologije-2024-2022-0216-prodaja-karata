@@ -1,0 +1,23 @@
+.kontaktStranica{
+    display: flex;
+    flex-direction: column; /*vertikalno*/
+    height: 100vh;
+}
+
+.kontaktNaslov{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #6435D1;
+}
+
+.formaKontakt{
+    flex-grow: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+    max-width: 600px;
+    background-color: #0A075F;
+    border-radius: 20px;
+    margin: 0 auto;
+}

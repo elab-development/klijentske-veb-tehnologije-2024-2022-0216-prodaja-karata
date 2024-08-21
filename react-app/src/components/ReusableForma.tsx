@@ -45,7 +45,7 @@ const Forma: React.FC<PoljePorps> = ({
           />
         </div>
       ))}
-      <div>
+      <div className = 'dugmenceNaKraju'>
         {" "}
         <ReusableDugme text={submitButtonText} onClick={() => {}} />
       </div>

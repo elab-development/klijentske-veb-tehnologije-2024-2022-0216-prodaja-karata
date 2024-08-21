@@ -1,10 +1,10 @@
 .loginContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-color: #EEE1FF;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #EEE1FF;
+}
   
   .form {
     background-color: #fff;
@@ -35,8 +35,6 @@
     background-color: #f0f0f0;
   }
 
-  .dugmeLogin{
-    justify-content: end;
-  }
+
   
   

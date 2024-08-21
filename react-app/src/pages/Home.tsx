@@ -40,7 +40,7 @@ function Home() {
           <img src = {partneri} alt = 'partneri'/>
         </div>
 
-        <div className = 'futer'>
+        <div className = 'futerHome'>
           <Futer />
         </div>
         

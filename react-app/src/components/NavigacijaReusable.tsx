@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 interface NavClan{
-    to: string;
+    to?: string;
     label: string;
     icon? : string;
     className?: string;
