@@ -39,7 +39,7 @@ function Futer() {
             
             <div className="forma">
             <input type="email" placeholder="Unesi e-mail ovde..." />
-            <button type="submit" className="dugmence">Prijavi se</button>
+            <Link to = '/login'><button type="submit" className="dugmence">Prijavi se</button></Link>
           
             </div>
 

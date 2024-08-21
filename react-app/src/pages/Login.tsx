@@ -1,26 +1,23 @@
 import React from "react";
-import ReusableForma from "../components/ReusableForma";
 import "../pages/css/Login.css";
+import NavBar from "../components/NavBar";
+import Futer from "../components/Futer";
+import FormaLogin from "../components/FormaLogin";
 
 const LoginForm: React.FC = () => {
-  const handleSubmit = (formData: { [key: string]: string }) => {
-    // Handle form submission here
-    console.log(formData);
-  };
-
-  const loginFields = [
-    { id: "email", type: "email", label: "E-mail" },
-    { id: "sifra", type: "password", label: "lozinka" },
-  ];
-
   return (
     <div>
-      <div className="loginContainer">
-        <ReusableForma
-          fields={loginFields}
-          submitButtonText="Login"
-          onSubmit={handleSubmit}
-        />
+      <div className="navBar1">
+        <NavBar />
+      </div>
+
+      <div>
+        <h1 className="naslovLogin">Prijavite se</h1>
+        <FormaLogin />
+      </div>
+
+      <div className="futerLogin">
+        <Futer />
       </div>
     </div>
   );

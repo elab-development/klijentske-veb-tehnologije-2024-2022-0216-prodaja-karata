@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import ReusableDugme from "./ReusableDugme";
+import "./ReusableFroma.css";
+
 interface Polje {
   id: string;
   type: string;
@@ -31,8 +33,10 @@ const Forma: React.FC<PoljePorps> = ({
   return (
     <form onSubmit={handleSubmit}>
       {fields.map((field) => (
-        <div key={field.id}>
-          <label htmlFor={field.id}>{field.label}</label>
+        <div key={field.id} className="box">
+          <label htmlFor={field.id} className="naziv">
+            {field.label}
+          </label>
           <input
             type={field.type}
             id={field.id}
@@ -41,7 +45,10 @@ const Forma: React.FC<PoljePorps> = ({
           />
         </div>
       ))}
-      <ReusableDugme text={submitButtonText} onClick={() => {}} />
+      <div>
+        {" "}
+        <ReusableDugme text={submitButtonText} onClick={() => {}} />
+      </div>
     </form>
   );
 };

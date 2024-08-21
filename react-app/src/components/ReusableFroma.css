@@ -1,0 +1,42 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #EEE1FF;
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  .box {
+    margin-bottom: 1.5rem;
+   
+  }
+  
+  .naziv {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #0A075F;
+  }
+  
+  .box input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+  }
+
+  .dugmeLogin{
+    justify-content: end;
+  }
+  
+  
