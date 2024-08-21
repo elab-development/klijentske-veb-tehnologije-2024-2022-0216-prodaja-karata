@@ -10,6 +10,7 @@ import Profil from './pages/Profil'
 import Karte from './pages/Karte'
 import Login from './pages/Login'
 import Korpa from './pages/Korpa'
+import Registracija from './pages/Registracija'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path ='/karte' element={<Karte />} />
           <Route path = '/login' element={<Login />} />
           <Route path = '/korpa' element={<Korpa />} />
+          <Route path ='/registracija' element={<Registracija/>} />
         </Routes>
       </BrowserRouter>
     </>

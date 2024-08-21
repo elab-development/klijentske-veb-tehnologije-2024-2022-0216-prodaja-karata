@@ -1,21 +1,36 @@
-.loginstranica{
-  background-color: #d9c6f2;
+.loginStrana{
+  display: flex;
+  flex-direction: column; /*vertikalno*/
+  height: 100vh;
 }
-
 
 .navBar1{
   background-image: linear-gradient(225deg, #ED4690, #5522CC);
 }
 
 .futerLogin{
+  margin-top: 50px;
   background-color: #0A075F;
 }
 
 .naslovLogin{
-  color: #0A075F;
+  color:  #6435D1;
   background-color: #EEE1FF ;
   text-align: center;
   
+}
+
+.formaLogin{
+  flex-grow: 1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 7rem;
+  max-width: 600px;
+  background-color: #0A075F;
+  border-radius: 20px;
+  margin: 0 auto;
+
 }
 
   

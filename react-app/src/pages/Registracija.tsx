@@ -1,20 +1,26 @@
 import '../pages/css/Registracija.css'
+import NavBar from '../components/NavBar';
+import Futer from '../components/Futer';
+import FormaRegistracija from '../components/FormaRegistracija';
 
 const Registracija = () => {
   return (
-    <div className="kontenjer">
-      <h2>Registrujte se</h2>
-      <form className="forma">
-        <input type="text" placeholder="Ime" />
-        <input type="text" placeholder="Prezime" />
-        <input type="text" placeholder="Datum Rodjenja" />
-        <input type="text" placeholder="Drzava" />
-        <input type="email" placeholder="E-mail" />
-        <input type="text" placeholder="Lozinka" />
-        <button type="submit" className="submit-button">
-          Registrujte se
-        </button>
-      </form>
+    <div className="registracijaStrana">
+      
+      <div className="navBar1">
+        <NavBar />
+      </div>
+      <h1 className = 'naslovRegistracija'>Registrujte se</h1>
+
+      <div className = 'kontenjerRegistracija'>
+          
+          <FormaRegistracija />
+      </div>
+
+
+      <div className = 'futer'>
+          <Futer />
+        </div>
     </div>
   );
 };

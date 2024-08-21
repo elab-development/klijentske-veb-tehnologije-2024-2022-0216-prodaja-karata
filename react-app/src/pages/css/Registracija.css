@@ -1,43 +1,30 @@
 
-.kontenjer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    height: 100vh;
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
+.registracijaStrana {
+  display: flex;
+  flex-direction: column; /*vertikalno*/
+  height: 100vh;
   
-  .forma{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1b1b1b;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .forma input {
-    width: 300px;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    width: 200px;
-    height: 50px;
-    background-color: #8e2de2;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
+}
+
+.kontenjerRegistracija {
+  flex-grow: 1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 7rem;
+  max-width: 600px;
+  background-color: #0A075F;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.naslovRegistracija {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #6435D1;
+}
+
+.futer {
+  margin-top: 50px;
+  background-color: #0A075F;
+}

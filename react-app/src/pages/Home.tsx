@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import '../pages/css/Home.css';
 import ljudi from '../assets/Ostalo/Vektor na pocetnoj.png'
 import partneri from '../assets/Ostalo/Partneri.png'
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -30,7 +31,7 @@ function Home() {
           <div className="kontenjerTekstIDugme">
             <h2 className="registracijaNaslov">Još niste napravili nalog?</h2>
             <p className="registracijaOpis">Registrujte se brzo i lako klikom na dugme</p>
-             <button className="registracijaDugme">Registruj se</button>
+             <Link to = '/registracija'><button className="registracijaDugme">Registruj se</button> </Link>
       </div>
         </div>
 

@@ -6,13 +6,12 @@ import FormaLogin from "../components/FormaLogin";
 
 const LoginForm: React.FC = () => {
   return (
-    <div>
+    <div className = 'loginStrana'> 
       <div className="navBar1">
         <NavBar />
       </div>
-
-      <div>
-        <h1 className="naslovLogin">Prijavite se</h1>
+      <h1 className="naslovLogin">Prijavite se</h1>
+      <div className = 'formaLogin'>
         <FormaLogin />
       </div>
 

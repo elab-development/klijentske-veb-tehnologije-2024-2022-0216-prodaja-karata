@@ -21,7 +21,7 @@ const FormaLogin: React.FC = () => {
   ];
 
   return (
-    <div className="loginContainer">
+    <div >
       <ReusableForma
         fields={polja}
         onSubmit={handleSubmit}
