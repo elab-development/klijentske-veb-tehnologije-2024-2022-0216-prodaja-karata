@@ -1,3 +1,4 @@
+/* Prvi deo - tekst*/
 .homePage {
     background-image: url('../../assets/Ostalo/Pozadina pocetna.png');
     background-position: center;
@@ -12,7 +13,8 @@
     position: relative;
     padding: 100px 60px 0 60px; 
     max-width: 1200px; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    margin-bottom: 200px; 
   }
   
   .naslovGlavni {
@@ -28,8 +30,56 @@
 
 
 
+/* Drugi deo - Search bar*/
+  .searchHome{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #0A075F;
+    height: 80px;
+    border-radius: 90px;
+    width: 700px;
+}
 
 
+  .blokSearchHome{
+    display: flex;
+    justify-content: center; 
+    align-items: top;
+    background-color: #fff;
+    margin-bottom: 0px;
+    height: 150px;
+
+  }
+
+  .poljeHome {
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.poljeLabelHome {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  align-items: center;
+  
+}
+
+.dugmeSearchHome{
+  width: 150px;
+  
+}
+
+
+
+
+
+/* Cetvri deo - partneri*/
 
   .partneri {
     background-color: #f2f2f2;
@@ -45,7 +95,7 @@
 
 
 
-
+/* Treci deo - registracija*/
 
   .registracija {
     background-color: #b89dcd;
@@ -53,6 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .kontenjerTekstIDugme-container {

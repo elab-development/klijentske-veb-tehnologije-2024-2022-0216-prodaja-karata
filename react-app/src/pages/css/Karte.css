@@ -1,4 +1,37 @@
-.naslovKarte{
+.searchiFiler {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #0A075F;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.poljeLabel {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+
+.naslovKarte {
     color: #6435D1;
     text-align: center;
 }
+
+.polje {
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.dugmeSearch{
+    width: 150px;
+    
+}
+
+
+

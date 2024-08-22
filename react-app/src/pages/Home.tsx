@@ -6,6 +6,7 @@ import '../pages/css/Home.css';
 import ljudi from '../assets/Ostalo/Vektor na pocetnoj.png'
 import partneri from '../assets/Ostalo/Partneri.png'
 import { Link } from "react-router-dom";
+import ReusableDugme from "../components/ReusableDugme";
 
 function Home() {
   return (
@@ -23,6 +24,19 @@ function Home() {
         </p>
         </div>
 
+
+        <div className = 'blokSearchHome'>
+          <div className = 'searchHome'>
+            <label className = 'poljeLabelHome'>
+              <input className = 'poljeHome' placeholder='Unesite naziv dogadjaja'/>
+            </label>
+          <div className='dugmeSearchHome'>
+            <ReusableDugme text='Pretrazi'/>
+          </div>
+         
+           </div>
+        </div>
+
         <div className = 'registracija'>
           <div className = 'slika'>
             <img src = {ljudi} alt = 'ljudi'/>
@@ -34,6 +48,7 @@ function Home() {
              <Link to = '/registracija'><button className="registracijaDugme">Registruj se</button> </Link>
       </div>
         </div>
+
 
         <div className = 'partneri'>
           <h1 className ='partneriNaslov'>Nasi partneri</h1>

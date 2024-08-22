@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Dogadjaj from '../models/Dogadjaj';
+import '../components/KartaLista.css'
 
 interface APIResponse {
   _embedded?: {
@@ -7,7 +8,7 @@ interface APIResponse {
   };
 }
 
-function EventList() {
+function KarteListaMuzika() {
   const [dogadjaj, setDogadjaj] = useState<Dogadjaj[]>([]);
   const [greska, setGreska] = useState<string | null>(null);
 
@@ -17,7 +18,7 @@ function EventList() {
 
   const fetchEvents = async () => {
     const apiKey = 'bCrG6hlnlrk4XKQSPfG4InLG75ryLCJG';
-    const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}`;
+    const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&apikey=${apiKey}`;
 
     try {
       const response = await fetch(url);
@@ -37,19 +38,23 @@ function EventList() {
   return (
     <div>
      
-      <ul style={{ listStyle: 'none', padding: 0 }}>
+      <ul style={{ listStyle: 'none', padding: 0 }} className = 'listaCela'>
         {dogadjaj.map(dogadjaji => (
-          <li key={dogadjaji.id} style={{ marginBottom: '20px' }}>
-            <h2>{dogadjaji.name}</h2>
-            <p>Date: {dogadjaji.dates.start.localDate}</p>
-            <p>Time: {dogadjaji.dates.start.localTime}</p>
+          <li key={dogadjaji.id} style={{ marginBottom: '20px' }} className = 'stavkaListe'>
             {dogadjaji.images && dogadjaji.images.length > 0 && (
               <img 
                 src={dogadjaji.images[0].url} 
                 alt={dogadjaji.name} 
                 style={{ maxWidth: '300px', height: 'auto' }}
+                className = 'dogadjajSlika'
               />
             )}
+            <div className = 'ispodSlike'>
+             <h2 className = 'dogadjajIme'>{dogadjaji.name}</h2>
+              <p className = 'dogadjajDatum'>Date: {dogadjaji.dates.start.localDate}</p>
+              <p className = 'dogadjajVreme'>Time: {dogadjaji.dates.start.localTime}</p>
+            </div>
+            
           </li>
         ))}
       </ul>
@@ -57,4 +62,4 @@ function EventList() {
   );
 }
 
-export default EventList;
+export default KarteListaMuzika;
