@@ -9,39 +9,39 @@ interface Polje {
 }
 
 interface PoljePorps {
-  fields: Polje[];
+  polja: Polje[];
   onSubmit: (formData: Record<string, string>) => void;
   submitButtonText: string;
 }
 
 const Forma: React.FC<PoljePorps> = ({
-  fields,
+  polja,
   onSubmit,
   submitButtonText,
 }) => {
-  const [formData, setFormData] = useState<Record<string, string>>({});
+  const [podaci, setPodaci] = useState<Record<string, string>>({});
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
+    setPodaci({ ...podaci, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    onSubmit(formData);
+    onSubmit(podaci);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      {fields.map((field) => (
-        <div key={field.id} className="box">
-          <label htmlFor={field.id} className="naziv">
-            {field.label}
+      {polja.map((polje) => (
+        <div key={polje.id} className="box">
+          <label htmlFor={polje.id} className="naziv">
+            {polje.label}
           </label>
           <input
-            type={field.type}
-            id={field.id}
+            type={polje.type}
+            id={polje.id}
             onChange={handleChange}
-            value={formData[field.id] || ""}
+            value={podaci[polje.id] || ""}
           />
         </div>
       ))}

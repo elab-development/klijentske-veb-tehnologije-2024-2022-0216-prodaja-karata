@@ -1,0 +1,45 @@
+.stranaProfil {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #EEE1FF;
+  }
+  
+  .profilNaslov {
+    color: #6435D1;
+    text-align: center;
+  }
+  
+  .kontenjeri {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+  
+  .infoOKorisniku {
+    background-color: #0A075F;
+    width: 45%;
+    max-width: 500px;
+    min-height: 460px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .nazivi {
+    padding: 30px;
+  }
+  
+  .istorijaKupovine {
+    background-color: #0A075F;
+    width: 45%;
+    max-width: 400px;
+    min-height: 300px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .unutarIstorije {
+    padding: 30px;
+    font-weight: bold;
+  }

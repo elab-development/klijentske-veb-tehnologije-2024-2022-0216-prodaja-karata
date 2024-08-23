@@ -19,7 +19,7 @@ function FormaKontakt() {
     ]
   return (
     <div>
-        <ReusableForma fields={elementi} onSubmit={handleSubmit} submitButtonText='Posalji upit'/>
+        <ReusableForma polja={elementi} onSubmit={handleSubmit} submitButtonText='Posalji upit'/>
     </div>
     
   )

@@ -1,9 +1,17 @@
-import React from 'react'
+
 import ReusableForma from "./ReusableForma";
+import { useState } from "react";
 
 function FormaRegistracija() {
+  const [daLiJeRegistrovan, setRegistrovan] = useState(false);
+
     const handleSubmit = (podaci: Record<string, string>) => {
         console.log("Uneti podaci:", podaci);
+
+        sessionStorage.setItem('registracijaPodaci', JSON.stringify(podaci));
+
+        setRegistrovan(true);
+        alert("Uspešno ste se registrovali!");
       };
 
     const polja = [
@@ -41,7 +49,11 @@ function FormaRegistracija() {
 
   return (
     <div>
-      <ReusableForma fields={polja} onSubmit={handleSubmit} submitButtonText='Registrujte se'/>
+      {daLiJeRegistrovan ? (
+        <p>Uspešno ste se registrovali! Hvala vam.</p>
+      ) : (
+        <ReusableForma polja={polja} onSubmit={handleSubmit} submitButtonText='Registrujte se'/>
+      )}
     </div>
   )
 }

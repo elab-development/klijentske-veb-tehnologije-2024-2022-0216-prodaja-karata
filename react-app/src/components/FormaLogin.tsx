@@ -23,7 +23,7 @@ const FormaLogin: React.FC = () => {
   return (
     <div >
       <ReusableForma
-        fields={polja}
+        polja={polja}
         onSubmit={handleSubmit}
         submitButtonText="Prijavi se"
       />

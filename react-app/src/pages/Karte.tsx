@@ -8,10 +8,10 @@ import { useState } from 'react'
 
 
 
+
 function Karte() {
 
   const [filter, setFilter] = useState<string | null>(null);
-
   const handleFilter = (filteri: string) => {
     setFilter(filteri === filter ? null : filteri);
   };
@@ -37,12 +37,13 @@ function Karte() {
 
       <div className='karteApi'>
         <div>
-          {(!filter || filter === 'sport') && <KarteLista klasa='sport' />}
-          {(!filter || filter === 'music') && <KarteLista klasa='music' />}
-          {(!filter || filter === 'theatre') && <KarteLista klasa='theatre' />}
-          {(!filter || filter === 'circus') && <KarteLista klasa='circus' />}
+          {(!filter || filter == 'sport') && <KarteLista klasa='sport' />}
+          {(!filter || filter == 'music') && <KarteLista klasa='music' />}
+          {(!filter || filter == 'theatre') && <KarteLista klasa='theatre' />}
+          {(!filter || filter == 'circus') && <KarteLista klasa='circus' />}
         </div>
       </div>
+
 
       <div className = 'futer'>
         <Futer />
