@@ -1,5 +1,101 @@
+.stanicaKorpa{
+    display: flex;
+    flex-direction: column; /*vertikalno*/
+    height: 100vh;
+
+}
+
 .naslovKupovina{
     margin-bottom: 1.5rem;
     text-align: center;
     color: #6435D1;
 }
+
+.prazna{
+    color: #6435D1;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+.naslovKupovina {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+.kontenjerKupovina {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+.prazna {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+  }
+  
+.kropaSadrzaj {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+.dogadjajSlikaKorpa {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+.dogadjajKarticaKorpa {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+.kvantitet {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .kvantitet button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    color: wheat;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+  .kvantitet span {
+    margin: 0 30px;
+    font-size: 16px;
+    color: #6435D1;
+    
+    
+  }
+  
+  .kropaSadrzaj button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+    margin-top: 10px;
+    background-color: #6435D1;
+  }
+  

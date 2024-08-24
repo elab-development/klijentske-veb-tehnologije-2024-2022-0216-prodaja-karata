@@ -12,12 +12,26 @@ import Login from './pages/Login'
 import Korpa from './pages/Korpa'
 import Registracija from './pages/Registracija'
 import { KorpaProvajder } from './components/KorpaFunkcije'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
+function VratiNaVrh() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 
 function App() {
   return (
     <>
     <KorpaProvajder>
       <BrowserRouter>
+        <VratiNaVrh />
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
