@@ -28,3 +28,46 @@
   margin-top: 50px;
   background-color: #0A075F;
 }
+
+
+@media screen and (min-width: 320px) {
+  .kontenjerRegistracija {
+    padding: 1.5rem;
+  }
+
+  .naslovRegistracija {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .kontenjerRegistracija {
+    padding: 3rem;
+    width: 80%;
+  }
+
+  .naslovRegistracija {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .futer {
+    margin-top: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .kontenjerRegistracija {
+    padding: 5rem;
+    width: 70%;
+  }
+
+  .naslovRegistracija {
+    font-size: 1.8rem;
+  }
+
+  .futer {
+    margin-top: 4rem;
+  }
+}

@@ -43,3 +43,66 @@
     padding: 30px;
     font-weight: bold;
   }
+
+
+@media screen and (min-width: 320px) {
+  .profilNaslov {
+    font-size: 1.2rem;
+  }
+
+  .infoOKorisniku,
+  .istorijaKupovine {
+    max-width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .profilNaslov {
+    font-size: 1.5rem;
+    padding: 20px 0;
+  }
+
+  .kontenjeri {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .infoOKorisniku,
+  .istorijaKupovine {
+    width: 45%;
+  }
+
+  .nazivi,
+  .unutarIstorije {
+    padding: 25px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .profilNaslov {
+    font-size: 1.8rem;
+  }
+
+  .kontenjeri {
+    padding-top: 50px;
+  }
+
+  .infoOKorisniku {
+    max-width: 500px;
+    min-height: 460px;
+  }
+
+  .istorijaKupovine {
+    max-width: 400px;
+    min-height: 300px;
+  }
+
+  .nazivi,
+  .unutarIstorije {
+    padding: 30px;
+  }
+}

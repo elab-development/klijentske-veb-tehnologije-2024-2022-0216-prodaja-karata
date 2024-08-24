@@ -27,7 +27,7 @@
   }
   
   .box input {
-    width: 100%;
+    width: 250px;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 20px;

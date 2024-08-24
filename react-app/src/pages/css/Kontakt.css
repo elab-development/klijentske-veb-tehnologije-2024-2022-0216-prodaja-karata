@@ -21,3 +21,47 @@
     border-radius: 20px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1024px) {
+    .formaKontakt {
+      padding: 5rem;
+      max-width: 80%;
+    }
+  
+    .kontaktNaslov {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .kontaktStranica {
+      padding: 15px;
+    }
+  
+    .formaKontakt {
+      padding: 3rem;
+      max-width: 90%;
+    }
+  
+    .kontaktNaslov {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .kontaktStranica {
+      padding: 10px;
+    }
+  
+    .formaKontakt {
+      padding: 2rem;
+      max-width: 95%;
+    }
+  
+    .kontaktNaslov {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+  

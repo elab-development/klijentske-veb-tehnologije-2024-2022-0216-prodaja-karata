@@ -33,21 +33,61 @@
 
 }
 
-  
-  @media (max-width: 768px) {
-    .loginContainer {
-      padding: 10% 5%;
-    }
-  
-    .form {
-      padding: 10% 5%;
-    }
-  
-    .passwordLabel {
-      margin-top: 30px;
-    }
-  
-    .submitButton {
-      width: 100%;
-    }
+@media screen and (max-width: 1024px) {
+  .formaLogin {
+    padding: 5rem;
+    max-width: 80%;
   }
+
+  .naslovLogin {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loginStrana {
+    padding: 15px;
+  }
+
+  .formaLogin {
+    padding: 3rem;
+    max-width: 90%;
+  }
+
+  .naslovLogin {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .futerLogin {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loginStrana {
+    padding: 10px;
+  }
+
+  .formaLogin {
+    padding: 2rem;
+    max-width: 95%;
+  }
+
+  .naslovLogin {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .futerLogin {
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+  

@@ -12,7 +12,7 @@ function Futer() {
     const [email, setEmail] = useState('');
 
     const handleSubmit = () => {
-      
+     
       if (email) {
         alert('Prijavili ste se na newsletter!');
         setEmail('');
@@ -29,9 +29,9 @@ function Futer() {
             njihove strasti i obogaćuju njihove živote. </p>
 
         <p> 
-            <Link to = 'https://www.facebook.com/login/'><img src = {fejs} alt = 'facebook' className = 'img1'/> </Link>
-            <Link to = 'https://x.com/home'><img src  = {tviter} alt = 'img1' className = 'img1'/> </Link>
-            <Link to ='https://www.linkedin.com/login'><img src = {linkedin} alt='img1' className = 'img1'/></Link>
+            <Link to = 'https://www.facebook.com/login/' target="_blank" rel="noopener noreferrer"><img src = {fejs} alt = 'facebook' className = 'img1'/> </Link>
+            <Link to = 'https://x.com/home' target="_blank" rel="noopener noreferrer"><img src  = {tviter} alt = 'img1' className = 'img1'/> </Link>
+            <Link to ='https://www.linkedin.com/login'target="_blank" rel="noopener noreferrer"><img src = {linkedin} alt='img1' className = 'img1'/></Link>
         </p>
         </div>
 

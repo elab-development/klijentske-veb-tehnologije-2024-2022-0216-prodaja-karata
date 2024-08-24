@@ -86,13 +86,52 @@ li {
 }
   
  
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-    }
-  
-    .prviDeo, .drugiDeo, .treciDeo {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+
+@media screen and (min-width: 320px) {
+  .kontenjer {
+    padding: 10px;
   }
+
+  .prviDeo, .drugiDeo, .treciDeo {
+    padding: 10px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .prviDeo, .drugiDeo, .treciDeo {
+    flex: 1 1 45%;
+  }
+
+  .drugiDeo li {
+    width: 48%;
+  }
+
+  .forma input {
+    width: calc(100% - 120px);
+    margin-bottom: 0;
+  }
+
+  .dugmence {
+    width: 110px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .prviDeo, .drugiDeo, .treciDeo {
+    flex: 1 1 30%;
+  }
+
+  .drugiDeo li {
+    width: 200px;
+  }
+
+  .forma input {
+    width: 300px;
+  }
+
+  .dugmence {
+    width: 100px;
+  }
+}

@@ -31,35 +31,36 @@
 
 
 /* Drugi deo - Search bar*/
-  .searchHome{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: #0A075F;
-    height: 80px;
-    border-radius: 90px;
-    width: 700px;
+.searchHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #0A075F;
+  height: 80px;
+  border-radius: 90px;
+  width: 700px;
 }
 
+.blokSearchHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEE1FF;
+  margin-bottom: 0px;
+  min-height: 100px; 
+  width: 100%;
+  padding: 20px 0;
+}
 
-  .blokSearchHome{
-    display: flex;
-    justify-content: center; 
-    align-items: top;
-    background-color: #fff;
-    margin-bottom: 0px;
-    height: 150px;
-
-  }
-
-  .poljeHome {
-    background-color: aliceblue;
-    border-radius: 20px;
-    height: 30px;
-    width: 300px;
-    border: 1px solid #ccc;
+.poljeHome {
+  background-color: aliceblue;
+  border-radius: 20px;
+  height: 30px;
+  width: 300px;
+  border: 1px solid #ccc;
+  color: #0A075F;
 }
 
 .poljeLabelHome {
@@ -67,12 +68,20 @@
   justify-content: center;
   width: 350px;
   align-items: center;
-  
 }
 
-.dugmeSearchHome{
+.dugmeSearchHome {
   width: 150px;
-  
+}
+
+.pretragaRezultati {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 
@@ -177,7 +186,7 @@
     }
   }
   
-  /* Responsivnost za mobilne uređaje */
+  /* Responsivnost za telefone */
   @media screen and (max-width: 768px) {
     .naslovGlavni {
       font-size: 28px;
