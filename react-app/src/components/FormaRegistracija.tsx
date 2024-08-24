@@ -6,7 +6,6 @@ function FormaRegistracija() {
   const [daLiJeRegistrovan, setRegistrovan] = useState(false);
 
     const handleSubmit = (podaci: Record<string, string>) => {
-        console.log("Uneti podaci:", podaci);
 
         sessionStorage.setItem('registracijaPodaci', JSON.stringify(podaci));
 

@@ -11,10 +11,12 @@ import Karte from './pages/Karte'
 import Login from './pages/Login'
 import Korpa from './pages/Korpa'
 import Registracija from './pages/Registracija'
+import { KorpaProvajder } from './components/KorpaFunkcije'
 
 function App() {
   return (
     <>
+    <KorpaProvajder>
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
@@ -27,6 +29,7 @@ function App() {
           <Route path ='/registracija' element={<Registracija/>} />
         </Routes>
       </BrowserRouter>
+      </KorpaProvajder>
     </>
   )
 }

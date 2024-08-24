@@ -2,7 +2,7 @@ import ReusableForma from './ReusableForma'
 
 function FormaKontakt() {
     const handleSubmit = (podaci: Record<string, string>) => {
-        console.log("Uneti podaci:", podaci);
+      console.log(podaci);
       };
 
     const elementi = [

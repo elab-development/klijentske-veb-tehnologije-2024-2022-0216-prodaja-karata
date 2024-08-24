@@ -4,7 +4,7 @@ import ReusableForma from "./ReusableForma";
 const FormaLogin: React.FC = () => {
   
   const handleSubmit = (podaci: Record<string, string>) => {
-    console.log("Uneti podaci:", podaci);
+   console.log(podaci);
   };
 
   const polja = [

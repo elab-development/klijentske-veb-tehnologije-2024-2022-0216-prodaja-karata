@@ -10,7 +10,7 @@
     border-radius: 20px;
     padding: 15px;
     width: 300px;
-    height: 400px;
+    height: 500px;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,13 @@
     font-size: 14px;
     text-align: center;
     margin: 5px 0;
+}
+
+.srce{
+    padding-top: 10px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
 }
 
 

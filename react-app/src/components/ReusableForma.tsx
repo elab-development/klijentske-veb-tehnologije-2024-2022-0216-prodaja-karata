@@ -37,12 +37,7 @@ const Forma: React.FC<PoljePorps> = ({
           <label htmlFor={polje.id} className="naziv">
             {polje.label}
           </label>
-          <input
-            type={polje.type}
-            id={polje.id}
-            onChange={handleChange}
-            value={podaci[polje.id] || ""}
-          />
+          <input type={polje.type} id={polje.id} onChange={handleChange} value={podaci[polje.id] || ""}/>
         </div>
       ))}
       <div className = 'dugmenceNaKraju'>
