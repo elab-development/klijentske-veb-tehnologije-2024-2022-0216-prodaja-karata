@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import Dogadjaj from '../models/Dogadjaj';
 import '../components/KartaLista.css';
 import ReusableDugme from './ReusableDugme';
-import srce from '../assets/Ikonice/666627.png'
+
 import { useCart } from './KorpaFunkcije';
 
 interface KarteListaProps {
@@ -14,6 +13,8 @@ function KarteLista({ dogadjaji }: KarteListaProps) {
 
   const handleDodaj = (dogadjaj: Dogadjaj) => {
     dodajUKorpu(dogadjaj);
+    alert("Dodato u korpu!");
+
   };
 
   return (
@@ -26,6 +27,7 @@ function KarteLista({ dogadjaji }: KarteListaProps) {
               <h2 className='dogadjajIme'>{dogadjaj.name}</h2>
               <p className='dogadjajDatum'>Datum: {dogadjaj.dates.start.localDate}</p>
               <p className='dogadjajVreme'>Vreme: {dogadjaj.dates.start.localTime}</p>
+              <p className = 'cena' > Cena: 30€</p>
             </div>
             <div className = 'dugmeNaDnuKartice'>
               <ReusableDugme text='Dodaj u korpu' onClick={() => handleDodaj(dogadjaj)} />

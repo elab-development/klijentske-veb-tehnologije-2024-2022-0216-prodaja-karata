@@ -3,12 +3,23 @@ import NavBar from "../components/NavBar"
 import Futer from "../components/Futer"
 import './css/Korpa.css'
 import { useCart } from '../components/KorpaFunkcije';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 
 function Korpa() {
   const { ElementiUKorpi, izbaciIzKorpe, povecaj, smanji } = useCart();
 
   useEffect(() => {}, [ElementiUKorpi]);
+
+  const[cena, setCena] = useState(0);
+
+  useEffect(() => {
+    let novaUkupnaCena = 0;
+    for (let i = 0; i < ElementiUKorpi.length; i++) {
+      novaUkupnaCena += ElementiUKorpi[i].broj * 30;
+    }
+    setCena(novaUkupnaCena);
+  }, [ElementiUKorpi]);
 
   return (
     <div className="stranicaKorpa">
@@ -37,6 +48,9 @@ function Korpa() {
             </div>
           ))
         )}
+      </div>
+      <div className = 'racun'>
+        <h2 className = 'naslovRacun'> Total: {cena}€ </h2>
       </div>
       <div className="futer">
         <Futer />

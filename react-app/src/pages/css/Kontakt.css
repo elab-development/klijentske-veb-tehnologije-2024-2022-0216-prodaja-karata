@@ -21,6 +21,26 @@
     border-radius: 20px;
     margin: 0 auto;
 }
+.racun{
+  background-color: #6435D1;
+  border-radius: 20px;
+  display: flex;
+  float: right;
+  width: 500px;
+  height: 40px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.dugmePlacanje{
+    width: 40px;
+}
+
+
+
 
 @media screen and (max-width: 1024px) {
     .formaKontakt {
