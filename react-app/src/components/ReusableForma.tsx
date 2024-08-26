@@ -14,7 +14,7 @@ interface PoljePorps {
   submitButtonText: string;
 }
 
-const Forma: React.FC<PoljePorps> = ({
+const ReusableForma: React.FC<PoljePorps> = ({
   polja,
   onSubmit,
   submitButtonText,
@@ -48,4 +48,4 @@ const Forma: React.FC<PoljePorps> = ({
   );
 };
 
-export default Forma;
+export default ReusableForma;
