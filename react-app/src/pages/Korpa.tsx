@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 
 function Korpa() {
   const { ElementiUKorpi, izbaciIzKorpe, povecaj, smanji } = useCart();
+  const [kupon, setKupon] = useState('');
+  const [popust, setPopust] = useState(0);
 
   useEffect(() => {}, [ElementiUKorpi]);
 
@@ -18,8 +20,21 @@ function Korpa() {
     for (let i = 0; i < ElementiUKorpi.length; i++) {
       novaUkupnaCena += ElementiUKorpi[i].broj * 30;
     }
+
+   
     setCena(novaUkupnaCena);
   }, [ElementiUKorpi]);
+
+  const primeniPopust = () => {
+    if (kupon.toUpperCase() === 'KTEH') {
+      const popustIznos = cena * 0.1;
+      setPopust(popustIznos);
+    } else {
+      setPopust(0);
+    }
+  };
+
+
 
   return (
     <div className="stranicaKorpa">
@@ -27,6 +42,7 @@ function Korpa() {
         <NavBar />
       </div>
       <h1 className='naslovKupovina'>Vasa korpa</h1>
+    
       <div className='kontenjerKupovina'>
         {ElementiUKorpi.length === 0 ? (
           <p className = 'prazna'>Korpa je prazna</p>
@@ -49,8 +65,21 @@ function Korpa() {
           ))
         )}
       </div>
+      
+
       <div className = 'racun'>
-        <h2 className = 'naslovRacun'> Total: {cena}€ </h2>
+      <h2 className='naslovRacun'>Total: {cena - popust}€</h2>
+      </div>
+      <div className="popust">
+        <h3>Da li imate kupon za popust?</h3>
+        <label>
+          <input 
+            placeholder="Unesite kod"
+            value={kupon}
+            onChange={(e) => setKupon(e.target.value)}
+          />
+        </label>
+        <button onClick={primeniPopust}>Primeni popust</button>
       </div>
       <div className="futer">
         <Futer />

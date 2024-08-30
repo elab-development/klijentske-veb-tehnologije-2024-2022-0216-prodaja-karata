@@ -8,7 +8,6 @@ const KorpaKontekst = createContext<KorpaFunkcijeInterfejs | undefined>(undefine
 
 export const KorpaProvajder: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [stavkeUKorpi, postaviStavkeUKorpi] = useState<ElementUKorpi[]>([]);
-
   const dodajUKorpu = (stavka: Dogadjaj) => {
     postaviStavkeUKorpi(prethodneStavke => {
       const postojecaStavka = prethodneStavke.find(stavkaUKorpi => stavkaUKorpi.id === stavka.id);
